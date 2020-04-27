@@ -1,14 +1,14 @@
-## Building a Flask App with Login and Registration Capability
+# Building a Flask App with Login and Registration Capability
 
-## 1. Create directory
+## Create directory
 `mkdir <directory>`
 `cd <directory`
 
-## 2. Set up a virtual environment
+## Set up a virtual environment
 `python -m venv .env`
 `source .env/bin/activate`
 
-## 3. Install packages (assume you already have Python and Pip installed)
+## Install packages (assume you already have Python and Pip installed)
 * `Flask`
 * `flask-sqlalchemy`
 * `flask-migrate`
