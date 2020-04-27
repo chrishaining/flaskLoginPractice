@@ -11,8 +11,8 @@ def load_user(user_id):
 class User(db.Model,UserMixin):
     __tablename__ = 'users'
     id = db.Column(db.Integer, primary_key=True)
-    email = db.Column(db.String(64, unique = True, index = True))
-    username = db.Column(db.String(64, unique = True, index = True))
+    email = db.Column(db.String(64), unique = True, index = True)
+    username = db.Column(db.String(64), unique = True, index = True)
     password_hash = db.Column(db.String(128)) # it's not actually the password, but a hashed version
 
     # the init function contains the password itself as an argument, which it then hashes
